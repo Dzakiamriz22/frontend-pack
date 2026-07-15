@@ -1,0 +1,50 @@
+{
+  "name": "@yourname/frontend-pack",
+  "version": "1.0.0",
+  "description": "Premium Frontend Skill Pack for OpenCode — shadcn/ui, TailwindCSS, Framer Motion, design review, AI slop detection, and production UI generation at Apple/Linear/Vercel quality.",
+  "keywords": [
+    "opencode-plugin",
+    "opencode",
+    "frontend",
+    "ui",
+    "shadcn",
+    "tailwindcss",
+    "react",
+    "nextjs",
+    "framer-motion",
+    "design-system",
+    "a11y",
+    "skills"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Your Name",
+    "url": "https://github.com/yourname"
+  },
+  "homepage": "https://github.com/yourname/frontend-pack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourname/frontend-pack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourname/frontend-pack/issues"
+  },
+  "main": "./.opencode/plugins/frontend-pack.mjs",
+  "exports": {
+    ".": "./.opencode/plugins/frontend-pack.mjs",
+    "./plugin": "./.opencode/plugins/frontend-pack.mjs"
+  },
+  "files": [
+    "AGENTS.md",
+    "skills/",
+    ".opencode/",
+    "examples/",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
