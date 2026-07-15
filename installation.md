@@ -56,14 +56,14 @@ Try a command:
 ## npm Installation (when published)
 
 ```bash
-npm install -g @dzakiamriz22/frontend-pack
+npm install -g @dzakiamriz/frontend-pack
 ```
 
 Then add to `opencode.json`:
 
 ```json
 {
-  "plugin": ["@dzakiamriz22/frontend-pack"]
+  "plugin": ["@dzakiamriz/frontend-pack"]
 }
 ```
 

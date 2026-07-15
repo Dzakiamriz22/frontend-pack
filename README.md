@@ -33,13 +33,13 @@ Add to `opencode.json`:
 ### B. npm (after publish)
 
 ```bash
-npm install -g @dzakiamriz22/frontend-pack
+npm install -g @dzakiamriz/frontend-pack
 ```
 
 Add to `opencode.json`:
 ```json
 {
-  "plugin": ["@dzakiamriz22/frontend-pack"]
+  "plugin": ["@dzakiamriz/frontend-pack"]
 }
 ```
 
