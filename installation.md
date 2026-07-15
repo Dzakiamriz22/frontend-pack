@@ -9,10 +9,7 @@
 
 ```bash
 # Clone from GitHub
-git clone https://github.com/yourname/frontend-pack.git ~/.config/opencode/plugin/frontend-pack
-
-# Or copy the directory
-cp -r frontend-pack ~/.config/opencode/plugin/frontend-pack
+git clone https://github.com/Dzakiamriz22/frontend-pack.git ~/.config/opencode/plugin/frontend-pack
 ```
 
 ## Step 2: Install dependencies
@@ -59,14 +56,14 @@ Try a command:
 ## npm Installation (when published)
 
 ```bash
-npm install -g @yourname/frontend-pack
+npm install -g @dzakiamriz22/frontend-pack
 ```
 
 Then add to `opencode.json`:
 
 ```json
 {
-  "plugin": ["@yourname/frontend-pack"]
+  "plugin": ["@dzakiamriz22/frontend-pack"]
 }
 ```
 

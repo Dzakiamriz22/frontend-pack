@@ -15,20 +15,31 @@ Premium frontend development skills for [OpenCode](https://opencode.ai). Generat
 
 ## Installation
 
-### Local
+Choose **one** method:
 
+### A. Clone from GitHub (recommended)
+
+```bash
+git clone https://github.com/Dzakiamriz22/frontend-pack.git ~/.config/opencode/plugin/frontend-pack
+```
+
+Add to `opencode.json`:
 ```json
-// opencode.json
 {
   "plugin": ["./plugin/frontend-pack"]
 }
 ```
 
-### npm (future)
+### B. npm (after publish)
 
+```bash
+npm install -g @dzakiamriz22/frontend-pack
+```
+
+Add to `opencode.json`:
 ```json
 {
-  "plugin": ["@yourname/frontend-pack"]
+  "plugin": ["@dzakiamriz22/frontend-pack"]
 }
 ```
 
