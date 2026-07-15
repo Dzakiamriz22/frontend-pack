@@ -1,43 +1,58 @@
 # Installation Guide
 
+<p align="center">
+  <b>One-time setup. Takes ~30 seconds.</b>
+</p>
+
+<br>
+
 ## Prerequisites
 
-- OpenCode (latest version)
-- Node.js 18+
+- **OpenCode** (latest version) — [opencode.ai](https://opencode.ai)
+- **Git** — [git-scm.com](https://git-scm.com)
 
-## Step 1: Clone or copy the plugin
+> Node.js is **not** required. This plugin is pure markdown + JavaScript/TypeScript skill definitions. No build step.
+
+<br>
+
+---
+
+## Step 1: Clone
 
 ```bash
-# Clone from GitHub
-git clone https://github.com/Dzakiamriz22/frontend-pack.git ~/.config/opencode/plugin/frontend-pack
+git clone https://github.com/Dzakiamriz22/frontend-pack.git \
+  ~/.config/opencode/plugin/frontend-pack
 ```
 
-## Step 2: Install dependencies
+This downloads all 38 skills, 21 commands, and the plugin engine to your machine.
 
-```bash
-cd ~/.config/opencode/plugin/frontend-pack
-npm install
-```
+<br>
 
-## Step 3: Add to OpenCode config
+---
+
+## Step 2: Configure
 
 Edit `~/.config/opencode/opencode.json`:
 
+**Standalone:**
 ```json
 {
   "plugin": ["./plugin/frontend-pack"]
 }
 ```
 
-If you have other plugins, add it to the array:
-
+**With other plugins (e.g. ponytail):**
 ```json
 {
   "plugin": ["@dietrichgebert/ponytail", "./plugin/frontend-pack"]
 }
 ```
 
-## Step 4: Verify installation
+<br>
+
+---
+
+## Step 3: Verify
 
 Open OpenCode and type:
 
@@ -45,27 +60,26 @@ Open OpenCode and type:
 /help
 ```
 
-You should see the Frontend Pack commands listed.
+You should see Frontend Pack commands listed (design, dashboard, landing, auth, etc.).
 
-Try a command:
+Try it:
 
 ```
 /design landing
 ```
 
-## npm Installation (when published)
+The AI will generate a production-ready landing page with:
+- Hero section
+- Features grid
+- Testimonials
+- CTA
+- Dark mode
+- Loading, empty, error states
+- Responsive layout
 
-```bash
-npm install -g @dzakiamriz/frontend-pack
-```
+<br>
 
-Then add to `opencode.json`:
-
-```json
-{
-  "plugin": ["@dzakiamriz/frontend-pack"]
-}
-```
+---
 
 ## Updating
 
@@ -74,12 +88,36 @@ cd ~/.config/opencode/plugin/frontend-pack
 git pull
 ```
 
+<br>
+
+---
+
 ## Uninstalling
 
-Remove `"./plugin/frontend-pack"` from your `opencode.json` plugin array.
-
-Optionally delete the directory:
+1. Remove `"./plugin/frontend-pack"` from `opencode.json`
+2. Delete the directory:
 
 ```bash
 rm -rf ~/.config/opencode/plugin/frontend-pack
 ```
+
+<br>
+
+---
+
+## Troubleshooting
+
+| Problem | Fix |
+|---|---|
+| Commands not showing in `/help` | Check `opencode.json` syntax — `plugin` must be an array |
+| Clone fails | Ensure Git is installed and you have internet access |
+| Path not found on Windows | Use `%USERPROFILE%\.config\opencode\plugin` or the full path |
+| Skills feel incomplete | Run `/ui-review` to score the output and auto-fix |
+
+<br>
+
+---
+
+<p align="center">
+  <sub>Questions? <a href="https://github.com/Dzakiamriz22/frontend-pack/issues">Open an issue</a></sub>
+</p>
